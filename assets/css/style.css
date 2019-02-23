@@ -2,3 +2,22 @@
   color: red;
   font-size: 2em;
 }
+
+#bg-image{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#todos{
+  color: white;
+  text-shadow: 0px 1px 1px black
+}
+.fa-trash-alt{
+  cursor: pointer;
+}
+.fa-pencil-alt{
+  cursor: pointer;
+}
+.form-check-input{
+  cursor: pointer;
+}
