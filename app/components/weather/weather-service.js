@@ -18,6 +18,12 @@ function _setState(prop, data) {
 	_state[prop] = data
 	_subscribers[prop].forEach(fn => fn());
 }
+function checkTime(i) {
+	if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+	return i;
+}
+
+
 
 
 export default class WeatherService {
@@ -30,9 +36,19 @@ export default class WeatherService {
 	}
 
 	getWeather() {
-		console.log('Calling the Weatherman')
 		weatherApi.get().then(res => {
 			_setState('weather', new Weather(res.data))
 		})
+	}
+
+	startTime() {
+		var today = new Date();
+		var h = today.getHours();
+		var m = today.getMinutes();
+		var s = today.getSeconds();
+		m = checkTime(m);
+		s = checkTime(s);
+		document.querySelector('.clock').innerHTML = h + ":" + m + ":" + s;
+		document.querySelector('.date').innerHTML = today.toDateString()
 	}
 }

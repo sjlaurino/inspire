@@ -8,7 +8,6 @@ export default class Todo {
 
   grabTemplate() {
     if (this.completed == true) {
-      console.log('bingo')
       return `
       <li><del>${this.description}</del></li> <i onclick="app.controllers.todoController.removeTodo('${this._id}')" class="far fa-trash-alt"></i>
     `

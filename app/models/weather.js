@@ -13,7 +13,7 @@ export default class Weather {
 
   grabTemplate() {
     return `
-    <h3>${this.farenheight}°</h3>
+    <h3>${this.kelvin}°</h3>
     <p>${this.city}</p>
     `
   }
