@@ -21,3 +21,19 @@
 .form-check-input{
   cursor: pointer;
 }
+
+#author{
+  visibility: hidden;
+}
+
+#quote:hover  #author{
+  color: burlywood;
+  text-shadow: 0px 1px 1px white;
+  visibility: visible;
+}
+
+#quote{
+  color: white;
+  text-shadow: 0px 1px 1px black;
+}
+

@@ -6,7 +6,7 @@ export default class Quote {
 
   grabTemplate() {
     return `
-    <h5>${this.body}</h5> <h1 id="author">${this.author}</h1>
+    <h5>${this.body} <span id="author"> <h1>${this.author}</h1> </span> </h5>
     `
   }
 }

@@ -15,24 +15,27 @@
 
 <body id="bg-image">
 	<div class="row">
-		<div class="col">
+		<div class="col-11 d-flex justify-content-end">
 			<div id="weather">
 				Your Weather Template
 			</div>
 		</div>
+		<div class="col-1"></div>
 	</div>
 	<div class="row">
-		<div class="col">
+		<div class="col-2"></div>
+		<div class="col-8 d-flex justify-content-center text-center">
 			<div id="quote">
 				The Quote
 			</div>
 		</div>
+		<div class="col-2"></div>
 	</div>
 
 	<div class="row">
 		<div class="col">
 			<div>
-				A Todo List
+				My Todo List:
 				<div id="todo-error"></div>
 				<form onsubmit="app.controllers.todoController.addTodo(event)" id="todo-form" class="form-inline">
 					<div class="form-group mx-sm-3 mb-2">
