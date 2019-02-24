@@ -8,11 +8,14 @@
   background-repeat: no-repeat;
 }
 .empty-row{
-  height: 300px;
+  height: 200px;
 }
 #todos{
   color: white;
   text-shadow: 0px 1px 1px black;
+}
+#todo-line{
+  display: inline-block;
 }
 .fa-trash-alt{
   cursor: pointer;
@@ -35,8 +38,11 @@
 }
 
 #quote{
+  font-size: 30pt;
   color: white;
   text-shadow: 0px 1px 1px black;
+  font-family: 'Kaushan Script', cursive;
+
 }
 
 #weather{
@@ -45,5 +51,23 @@ text-shadow:
 		1px -1px 0 white,
 		-1px 1px 0 white,
 		1px 1px 0 white;
+}
+
+.date{
+text-shadow: 0px 1px 1px white;
+font-size: 15pt;
+}
+.clock{
+  font-size: 40pt;
+  color: white;
+  text-shadow: 		
+  -1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+}
+
+.check-if{
+  font-size: 9pt;
 }
 
