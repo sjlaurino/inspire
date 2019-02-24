@@ -8,5 +8,13 @@ export default class Weather {
     // You should probably convert the temperature data to either F or C
     this.city = data.name
     this.kelvin = data.main.temp
+    this.farenheight = (this.kelvin * (9 / 5) / 459.67).toFixed(0)
+  }
+
+  grabTemplate() {
+    return `
+    <h3>${this.farenheight}°</h3>
+    <p>${this.city}</p>
+    `
   }
 }

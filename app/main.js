@@ -9,6 +9,7 @@ class App {
       weatherController: new WeatherController(),
       todoController: new TodoController(),
       imageController: new ImageController()
+
     }
   }
 }
