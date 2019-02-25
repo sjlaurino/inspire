@@ -4,7 +4,7 @@ import Todo from "../../models/todo.js";
 // @ts-ignore
 const todoApi = axios.create({
 	baseURL: 'https://bcw-sandbox.herokuapp.com/api/steven/todos/',
-	timeout: 3000
+	timeout: 4000
 });
 
 let _state = {
@@ -35,7 +35,6 @@ export default class TodoService {
 	}
 
 	getTodos() {
-		console.log("Getting the Todo List")
 		todoApi.get()
 			.then(res => {
 				let data = res.data.data.map(t => new Todo(t))
@@ -72,4 +71,8 @@ export default class TodoService {
 		// The http method is delete at the todoId
 	}
 
+	countTodos() {
+		let todos = _state.todos
+		return todos.length
+	}
 }

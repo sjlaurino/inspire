@@ -9,6 +9,8 @@ function _drawTodos() {
 		template += t.grabTemplate()
 	})
 	document.querySelector('#todos').innerHTML = template
+	let count = _todoService.countTodos()
+	document.querySelector('#todo-count').innerHTML = ' ' + count.toString()
 }
 
 
@@ -23,7 +25,6 @@ export default class TodoController {
 		_todoService.addSubscriber('todos', _drawTodos)
 		_todoService.getTodos()
 
-		// Don't forget to add your subscriber
 	}
 
 	addTodo(event) {

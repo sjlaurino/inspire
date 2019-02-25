@@ -47,8 +47,7 @@
 		</div>
 	</div>
 	<div class="row mr-3">
-		<div class="col-10"></div>
-		<div class="col-2 d-flex justify-content-end">
+		<div class="col d-flex flex-column align-items-end">
 			<div>
 				<div id="todo-error"></div>
 				<form onsubmit="app.controllers.todoController.addTodo(event)" id="todo-form" class="form-inline">
@@ -57,6 +56,9 @@
 					</div>
 					<button type="submit" class="btn btn-secondary mb-2 ml-4 d-flex justify-content-center">Add</button>
 				</form>
+				<div class="todo-count ml-4">
+					<p># of Todos: <span id="todo-count"></span> </p>
+				</div>
 				<div class="todo-line">
 					<ul id="todos">
 
