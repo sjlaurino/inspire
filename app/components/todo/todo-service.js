@@ -4,7 +4,7 @@ import Todo from "../../models/todo.js";
 // @ts-ignore
 const todoApi = axios.create({
 	baseURL: 'https://bcw-sandbox.herokuapp.com/api/steven/todos/',
-	timeout: 4000
+	timeout: 3000
 });
 
 let _state = {
