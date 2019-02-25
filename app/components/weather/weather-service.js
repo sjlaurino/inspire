@@ -46,6 +46,11 @@ export default class WeatherService {
 		var h = today.getHours();
 		var m = today.getMinutes();
 		var s = today.getSeconds();
+		if (h > 12) {
+			h -= 12;
+		} else if (h === 0) {
+			h = 12;
+		}
 		m = checkTime(m);
 		s = checkTime(s);
 		document.querySelector('.clock').innerHTML = h + ":" + m + ":" + s;
