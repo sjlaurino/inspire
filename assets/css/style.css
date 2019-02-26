@@ -10,6 +10,10 @@
 .empty-row{
   height: 200px;
 }
+.todo-bg{
+  background-color: rgba(0, 0, 0, 0.432);
+
+}
 #todos{
   color: white;
   text-shadow: 0px 1px 1px black;

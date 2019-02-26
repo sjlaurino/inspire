@@ -48,13 +48,13 @@
 	</div>
 	<div class="row mr-3">
 		<div class="col d-flex flex-column align-items-end">
-			<div>
+			<div class="todo-bg">
 				<div id="todo-error"></div>
-				<form onsubmit="app.controllers.todoController.addTodo(event)" id="todo-form" class="form-inline">
+				<form onsubmit="app.controllers.todoController.addTodo(event)" id="todo-form" class="form-inline mt-3">
 					<div class="form-group mx-sm-3 mb-2">
 						<input type="text" name="description" class="form-control" id="todo" placeholder="Type Todo Here">
 					</div>
-					<button type="submit" class="btn btn-secondary mb-2 ml-4 d-flex justify-content-center">Add</button>
+					<button type="submit" class="btn btn-secondary mb-2 ml-2 mr-2 d-flex justify-content-center">Add</button>
 				</form>
 				<div class="todo-count ml-4">
 					<p># of Todos: <span id="todo-count"></span> </p>
