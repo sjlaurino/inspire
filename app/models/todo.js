@@ -9,7 +9,7 @@ export default class Todo {
   grabTemplate() {
     if (this.completed == true) {
       return `
-      <li id="todo-line"><del>${this.description}</del> <i onclick="app.controllers.todoController.removeTodo('${this._id}')" class="far fa-trash-alt" id="todo-line"></i></li>
+      <li onclick="app.controllers.todoController.toggleTodoStatus('${this._id}')" id="todo-line"><del class="todo-line">${this.description}</del> <i onclick="app.controllers.todoController.removeTodo('${this._id}')" class="far fa-trash-alt" id="todo-line"></i></li>
     `
     } else {
       return `
