@@ -6,12 +6,17 @@
 #bg-image{
   background-size: cover;
   background-repeat: no-repeat;
+  background-image:
+      linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
 }
 .empty-row{
   height: 200px;
 }
 .todo-bg{
-  background-color: rgba(0, 0, 0, 0.432);
+  background-color: rgba(0, 0, 0, 0.430);
 
 }
 #todos{
@@ -41,7 +46,7 @@
 }
 
 #quote:hover  #author{
-  color: burlywood;
+  color: blueviolet;
   text-shadow: 0px 1px 1px white;
   visibility: visible;
 }
@@ -63,18 +68,21 @@ text-shadow:
 }
 
 .date{
-  color: green;
-text-shadow: 0px 2px 2px black;
-font-size: 18pt;
+  background-color: white;
+  color: black;
+/* text-shadow: 0px 2px 2px black; */
+font-size: 25pt;
+/* -webkit-text-stroke: 1px black; */
 }
 .clock{
+  font-family: 'Anton', sans-serif;
   font-size: 90pt;
   color: white;
-  text-shadow: 		
+  /* text-shadow: 		
   -1px -1px 0 black,
 		1px -1px 0 black,
 		-1px 1px 0 black,
-		1px 1px 0 black;
+		1px 1px 0 black; */
 }
 
 .check-if{
